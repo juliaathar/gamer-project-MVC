@@ -7,4 +7,15 @@
     <RootNamespace>gamer_project_MVC</RootNamespace>
   </PropertyGroup>
 
+<!-- pacotes responsáveis por conectar e fazer a migração de códigos para o banco de dados, referente ao entity framework, ou seja, a partir do código irá gerar as tabelas no banco de dados -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.1.23111.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.1.23111.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0-preview.1.23111.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+  </ItemGroup>
+
 </Project>

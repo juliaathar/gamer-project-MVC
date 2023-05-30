@@ -9,5 +9,6 @@ namespace gamer_project_MVC.Models
         public int IdEquipe { get; set; }
         public string Nome { get; set; }
         public string Imagem { get; set; } // nome da imagem + extensao. ex: barcelona.png
+        public ICollection<Jogador> Jogador { get; set; } // referência da classe equipe para ter acesso a classe jogadores
     }
 }
