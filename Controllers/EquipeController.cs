@@ -38,7 +38,36 @@ namespace gamer_project_MVC.Controllers
 
             // atribuicao de valores recebidos do formulario 
             novaEquipe.Nome = form["Nome"].ToString();
-            novaEquipe.Imagem = form["Imagem"].ToString();
+
+            //novaEquipe.Imagem = form["Imagem"].ToString(); //! aqui estava recebendo como string, nao queremos isso
+
+            // inicio da logica do upload da imagem 
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files[0];
+
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwrooot/img/Equipes");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwrooot/img/", folder, file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                novaEquipe.Imagem = file.FileName;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
+
+            // fim da logica de upload 
 
             c.Equipe.Add(novaEquipe); // adiciona objeto na tabela do banco de dados
 
