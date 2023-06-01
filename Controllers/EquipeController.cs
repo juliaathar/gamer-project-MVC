@@ -46,14 +46,14 @@ namespace gamer_project_MVC.Controllers
             {
                 var file = form.Files[0];
 
-                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwrooot/img/Equipes");
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
 
                 if (!Directory.Exists(folder))
                 {
                     Directory.CreateDirectory(folder);
                 }
 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwrooot/img/", folder, file.FileName);
+                var path = Path.Combine(folder, file.FileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
