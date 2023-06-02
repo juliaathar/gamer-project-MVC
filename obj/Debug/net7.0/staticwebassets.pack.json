@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\8.jpg"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\download.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\download.png"
     },
@@ -25,8 +29,24 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\i (1).png"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\i (2).png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\i (2).png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\i (3).png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\i (3).png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\i.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\i.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\kisspng-fc-barcelona-football-la-liga-portable-network-gra-5c4eff2f175001.4120157515486810070955.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\kisspng-fc-barcelona-football-la-liga-portable-network-gra-5c4eff2f175001.4120157515486810070955.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\renato-augusto-corinthians.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\renato-augusto-corinthians.jpg"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\js\\site.js",

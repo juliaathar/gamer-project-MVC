@@ -20,12 +20,12 @@ namespace gamer_project_MVC.Controllers
             _logger = logger;
         }
 
-        Context c = new Context(); // instancia do context para acessar o banco e dados
+        Context c = new Context(); // instância do context para acessar o banco e dados
 
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
-            ViewBag.Equipe = c.Equipe.ToList(); //atraves do context ta acessando a tabela equipe e fazendo a listagem. A viewbag é uma variavel que guardara as equipes listadas no banco de dados
+            ViewBag.Equipe = c.Equipe.ToList(); //através do context tá acessando a tabela equipe e fazendo a listagem. A viewbag é uma váriavel que guardara as equipes listadas no banco de dados
 
             // retorna a view da equipe (TELA)
             return View();
@@ -34,14 +34,14 @@ namespace gamer_project_MVC.Controllers
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
-            Equipe novaEquipe = new Equipe(); // instancia do objeto equipe
+            Equipe novaEquipe = new Equipe(); // instância do objeto equipe
 
-            // atribuicao de valores recebidos do formulario 
+            // atribuição de valores recebidos do formulário 
             novaEquipe.Nome = form["Nome"].ToString();
 
             //novaEquipe.Imagem = form["Imagem"].ToString(); //! aqui estava recebendo como string, nao queremos isso
 
-            // inicio da logica do upload da imagem 
+            //TODO início da logica do upload da imagem 
             if (form.Files.Count > 0)
             {
                 var file = form.Files[0];
@@ -67,13 +67,13 @@ namespace gamer_project_MVC.Controllers
                 novaEquipe.Imagem = "padrao.png";
             }
 
-            // fim da logica de upload 
+            //TODO fim da lógica de upload 
 
             c.Equipe.Add(novaEquipe); // adiciona objeto na tabela do banco de dados
 
-            c.SaveChanges(); // salva alteracoes no banco de dados 
+            c.SaveChanges(); // salva alterações no banco de dados 
 
-            return LocalRedirect("~/Equipe/Listar"); // retorna para o local chamando a rota de listar (metodo index)
+            return LocalRedirect("~/Equipe/Listar"); //! retorna para o local chamando a rota de listar (método index)
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -93,5 +93,62 @@ namespace gamer_project_MVC.Controllers
 
             return LocalRedirect("~/Equipe/Listar");
         }
+
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            Equipe equipe = c.Equipe.First(x => x.IdEquipe == id);
+
+            ViewBag.Equipe = equipe;
+
+            return View("Edit");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Equipe equipe = new Equipe();
+
+            equipe.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            equipe.Nome = form["Nome"].ToString();
+
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files[0];
+
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(folder, file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                equipe.Imagem = file.FileName;
+            }
+            else
+            {
+                equipe.Imagem = "padrao.png";
+            }
+
+            Equipe equipeBuscada = c.Equipe.First(x => x.IdEquipe == equipe.IdEquipe);
+
+            equipeBuscada.Nome = equipe.Nome;
+            equipeBuscada.Imagem = equipe.Imagem;
+
+            c.Equipe.Update(equipeBuscada);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
     }
 }
