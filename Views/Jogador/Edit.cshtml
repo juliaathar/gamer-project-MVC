@@ -1,0 +1,15 @@
+<h1>Edição de Jogador</h1>
+
+<form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+
+    <input type="hidden" name="IdEquipe" value="@ViewBag.jogador.IdEquipe">
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+
+    <label for="">Nome</label>
+    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
+
+    <label for="">Email</label>
+    <input type="text" name="Email" value="@ViewBag.Jogador.Email">
+
+    <button type="submit">Atualizar</button>
+</form>
