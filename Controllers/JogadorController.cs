@@ -37,6 +37,7 @@ namespace gamer_project_MVC.Controllers
             return View("Error!");
         }
 
+        [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
             Jogador novoJogador = new Jogador();
@@ -44,10 +45,45 @@ namespace gamer_project_MVC.Controllers
             novoJogador.Nome = form["Nome"].ToString();
             novoJogador.Email = form["Email"].ToString();
             novoJogador.Senha = form["Senha"].ToString();
+            novoJogador.IdEquipe = int.Parse(form["Equipe"].ToString());
 
-            Equipe equipe = new Equipe();
+            c.Jogador.Add(novoJogador);
 
-            
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+        }
+
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            Jogador jogadorBuscado = c.Jogador.FirstOrDefault(e => e.IdJogador == id);
+
+
+            c.Remove(jogadorBuscado);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Jogador jogador = new Jogador();
+
+            jogador.IdJogador = int.Parse(form["IdJogador"].ToString());
+            jogador.Nome = form["Nome"].ToString();
+
+            Jogador jogadorProcurado = c.Jogador.First(j => j.IdJogador == jogador.IdJogador);
+
+            jogador.Nome = jogador.Nome;
+
+            c.Jogador.Update(jogador);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
         }
     }
 }
