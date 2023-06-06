@@ -18,13 +18,12 @@
     <input type="text" name="Senha" required>
 
     <label for="">Equipe</label>
-    <select class="form-control" id="imagemEquipe" name="Equipe">
+    <select class="form-control" name="Equipe">
         <option value="">Selecione</option>
         @foreach (var equipe in ViewBag.Equipe)
         {
             <option value="@equipe.IdEquipe">@equipe.Nome</option>
         }
-    </select>
     </select>
 
     <button type="submit">Cadastrar</button>

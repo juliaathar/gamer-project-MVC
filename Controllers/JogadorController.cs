@@ -73,6 +73,7 @@ namespace gamer_project_MVC.Controllers
             Jogador jogadorBuscado = c.Jogador.First(j => j.IdJogador == id);
 
             ViewBag.Jogador = jogadorBuscado;
+            ViewBag.Equipe = c.Equipe.ToList();
 
             return View("Edit");
         }
@@ -91,6 +92,7 @@ namespace gamer_project_MVC.Controllers
 
             jogadorProcurado.Nome = jogador.Nome;
             jogadorProcurado.Email = jogador.Email;
+            jogadorProcurado.IdEquipe = jogador.IdEquipe;
 
             c.Jogador.Update(jogadorProcurado);
 
