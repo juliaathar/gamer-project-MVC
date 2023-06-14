@@ -47,7 +47,7 @@ namespace gamer_project_MVC.Controllers
             string senha = form["Senha"].ToString();
 
             //se o objeto buscado "J" for igual ao o objeto cadastrado, para ver se existe um usuario cadastrado com estes dados
-            Jogador jogadorBuscado = c.Jogador.FirstOrDefault(j => j.Email == email && j.Senha == senha);
+            Jogador jogadorBuscado = c.Jogador.First(j => j.Email == email && j.Senha == senha);
 
             //! Aqui precisamos implementar a sessão // FOI IMPLEMENTADO PARTE DA DOCUMENTAÇÃO NA PROGRAM MAIS INFORMAÇÕES NELA.
             //se for diferente de nulo
