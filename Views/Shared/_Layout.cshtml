@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Projeto Gamer </title>
     <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="./_Layout.cshtml.css">
+    <link rel="stylesheet" href="~/css/Header-Footer.css">
 </head>
 
 
 <body>
 
+      <!-- HEADER -->
     <header class="header">
         <div class="header-top">
             <div class="container-grid header-top-flex">
@@ -49,10 +50,16 @@
                 <input type="checkbox" id="mostra-esconde-navmenu">
                 <div class="nav-bkg">
                     <nav>
-                        <a href="#">Início</a>
-                        <a href="#">Jogadores</a>
-                        <a href="#">Equipes</a>
-                        <a href="#">Notícias</a>
+                        <a asp-controller="Home" asp-action="Index">Início</a>
+                        @if (ViewBag.Username != null)
+                        {
+                            <a asp-controller="Equipe" asp-action="Index">Equipes</a>
+                            <a asp-controller="Jogador" asp-action="Index">Jogadores</a>
+                            <a asp-controller="Login" asp-action="Logout">Logout</a>
+                        }
+                        @** Note o href aqui no hyperlink de notícias. O ~/ serve para levar para outro site e o # serve
+                        para dentro do próprio site o hyperlink levar o usuário até o bloco de código com esse ID *@
+                        <a href="~/#noticias">Notícias</a>
 
                         <a class="phone-box">
                             <img src="~/assets/phone-icon.png" alt="phone icon" title="Ícone Telefone">
@@ -90,49 +97,8 @@
     </header>
 
 
+    @RenderBody()
 
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GamerProject_MVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-
-                        @if (ViewBag.UserName != null)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Jogador"
-                                    asp-action="Index">Jogadores</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Equipe"
-                                    asp-action="Index">Equipes</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login"
-                                    asp-action="Logout">Logout</a>
-                            </li>
-
-                            <li>Olá @ViewBag.UserName, Seja Bem Vindo!</li>
-                        }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login"
-                                    asp-action="Index">Login</a>
-                            </li>
-                        }
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
     <!-- BANNER LIGA GAMERS -->
     <section class="banner">
@@ -143,8 +109,8 @@
     <!-- CARD JOGOS -->
     <section>
         <div class="container-grid card-jogos">
-            <img src="./images/Game-FIFA.png" alt="Fifa 23">
-            <img src="./images/Game-CS-GO.png" alt="Úlimo Jogo">
+            <img src="~/images/Game-FIFA.png" alt="Fifa 23">
+            <img src="~/images/Game-CS-GO.png" alt="Úlimo Jogo">
         </div>
     </section>
 
@@ -158,10 +124,10 @@
 
             <!-- efeito borda gradient -->
             <div class="gamers">
-                <img src="./images/kiljoy.png" alt="Gamer 1">
+                <img src="~/images/kiljoy.png" alt="Gamer 1">
                 <div class="card-bkg" id="jogos-diferentes">
                     <article class="produto">
-                        <img src="./assets/joystick-icon.svg" alt="Icone Joystick">
+                        <img src="~/assets/joystick-icon.svg" alt="Icone Joystick">
                         <h3>20 Jogos Diferentes</h3>
                         <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
                             técnicas.</p>
@@ -170,10 +136,10 @@
             </div>
 
             <div class="gamers">
-                <img src="./images/lade-lol.png" alt="Gamer 2">
+                <img src="~/images/lade-lol.png" alt="Gamer 2">
                 <div class="card-bkg" id="professores">
                     <article class="produto">
-                        <img src="./assets/joystick-prof-icon.svg" alt="Icone Joystick">
+                        <img src="~/assets/joystick-prof-icon.svg" alt="Icone Joystick">
                         <h3>53 Professores</h3>
                         <p>Temos 53 Proplayers no nosso time para ensinar todas as es- tratégias, você vai aprender do
                             básico ao avançado. <br>
@@ -193,56 +159,56 @@
             </div>
 
             <article class="card-noticia">
-                <img src="./images/noticia1.png" alt="Notícia 1">
+                <img src="~/images/noticia1.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia2.png" alt="Notícia 1">
+                <img src="~/images/noticia2.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia3.png" alt="Notícia 1">
+                <img src="~/images/noticia3.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia4.png" alt="Notícia 1">
+                <img src="~/images/noticia4.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia5.png" alt="Notícia 1">
+                <img src="~/images/noticia5.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia6.png" alt="Notícia 1">
+                <img src="~/images/noticia6.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia7.png" alt="Notícia 1">
+                <img src="~/images/noticia7.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>
             </article>
 
             <article class="card-noticia">
-                <img src="./images/noticia8.png" alt="Notícia 1">
+                <img src="~/images/noticia8.png" alt="Notícia 1">
                 <h3>Título da Notícia</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since.</p>

@@ -241,6 +241,10 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\Header-Footer.css",
+      "PackagePath": "staticwebassets\\css\\Header-Footer.css"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
