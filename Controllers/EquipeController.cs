@@ -25,6 +25,7 @@ namespace gamer_project_MVC.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
 
             ViewBag.Equipe = c.Equipe.ToList(); //através do context tá acessando a tabela equipe e fazendo a listagem. A viewbag é uma váriavel que guardara as equipes listadas no banco de dados
 
@@ -100,6 +101,8 @@ namespace gamer_project_MVC.Controllers
         {
             Equipe equipe = c.Equipe.First(x => x.IdEquipe == id);
 
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            
             ViewBag.Equipe = equipe;
 
             return View("Edit");
