@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V9WJjSmBfeavsV9JuE3SMu3SugJEHWzQyZUQDtZ9eBk=",
+  "Hash": "Lbij8XE+oTy4RYZS8wvBF4laeHToU0ZEoxuN3a8PD4M=",
   "Source": "gamer-project-MVC",
   "BasePath": "_content/gamer-project-MVC",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Header-Footer.css"
+    },
+    {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\login.css",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\site.css",
