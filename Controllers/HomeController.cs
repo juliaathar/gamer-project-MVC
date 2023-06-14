@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using gamer_project_MVC.Models;
+using gamer_project_MVC.Infra;
 
 namespace gamer_project_MVC.Controllers;
 
@@ -15,6 +16,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.UserName = HttpContext.Session.GetString("UserName");
+
         return View();
     }
 

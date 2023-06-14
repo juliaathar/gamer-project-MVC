@@ -25,6 +25,7 @@ namespace gamer_project_MVC.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
+
             ViewBag.Equipe = c.Equipe.ToList(); //através do context tá acessando a tabela equipe e fazendo a listagem. A viewbag é uma váriavel que guardara as equipes listadas no banco de dados
 
             // retorna a view da equipe (TELA)
