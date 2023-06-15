@@ -4,7 +4,7 @@
     ViewData["Title"] = "Equipe";
 }
 
-<h1> Tela de Equipes </h1>
+@* <h1> Tela de Equipes </h1> *@
 
 @if (ViewBag.UserName == null)
 {
@@ -72,9 +72,9 @@ else
                                         <img class="yellow-trash" src="~/assets/trash.png" alt="">
                                     </a>
 
-                                    @* <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">
-                                        <img class="yellow-trash" src="~/assets/trash.png" alt="">
-                                    </a> *@
+                                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">
+                                        <img class="yellow-trash" src="~/assets/🦆 icon _pencil_ 1.png" alt="">
+                                    </a> 
                                 </td>
                             </tr>
                         }

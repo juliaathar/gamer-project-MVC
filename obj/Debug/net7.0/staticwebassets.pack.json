@@ -241,12 +241,20 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\assets\\\uD83E\uDD86 icon _pencil_ 1.png",
+      "PackagePath": "staticwebassets\\assets\\\uD83E\uDD86 icon _pencil_ 1.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\Header-Footer.css",
       "PackagePath": "staticwebassets\\css\\Header-Footer.css"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\equipes.css",
       "PackagePath": "staticwebassets\\css\\equipes.css"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\jogadores.css",
+      "PackagePath": "staticwebassets\\css\\jogadores.css"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\css\\login.css",
@@ -353,6 +361,10 @@
       "PackagePath": "staticwebassets\\images\\noticia8.png"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\640px-Brooklyn_Nets_newlogo.svg.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\640px-Brooklyn_Nets_newlogo.svg.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\8.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\8.jpg"
     },
@@ -363,6 +375,14 @@
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Miami-Heat-logo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Miami-Heat-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\corinthians.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\corinthians.png"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\download (1).png",
@@ -393,8 +413,28 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\kisspng-fc-barcelona-football-la-liga-portable-network-gra-5c4eff2f175001.4120157515486810070955.jpg"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\lkers.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\lkers.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\logo-corinthians-1024.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\logo-corinthians-1024.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\logo-sao-paulo-4096.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\logo-sao-paulo-4096.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\renato-augusto-corinthians.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\renato-augusto-corinthians.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\sccp.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\sccp.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\spfc.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\spfc.png"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\js\\site.js",
