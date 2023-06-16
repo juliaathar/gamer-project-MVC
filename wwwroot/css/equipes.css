@@ -5,14 +5,18 @@
 main {
     margin-top: 60px;
     height: 1231px;
-    background-image: url(../images/background-equipes-mobile.png);
+    background-image: url(../images/banner.png);
     background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 }
 
 
 
-
+.yellow-trash{
+    margin-left: 20px;
+}
 
 
 
