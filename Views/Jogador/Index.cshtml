@@ -31,7 +31,8 @@ else
             <section class="container-grid cadastro-equipes">
 
 
-                <form action="" class="frm-cad-equipe">
+                <form class="frm-cad-equipe"  method="post" action='@Url.Action("Cadastrar")'
+                    enctype="multipart/form-data">
                     <div class="cadequipe-titulo">
                         <h1>Cadastro de Jogadores</h1>
                         <hr>
@@ -53,7 +54,7 @@ else
                     <input class="campo-entrada" type="email" id="email-jogador" placeholder="Digite o Email do Jogador:"
                         name="Email">
                     <input class="campo-entrada" type="password" id="senha" placeholder="Digite a Senha:" name="Senha">
-                    <button>Cadastrar</button>
+                    <button type="submit">Cadastrar</button>
 
 
 
