@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zzTLNtzB3AET3ztHOT7DRq4TNrCDwQzwpmL0DRqJzSY=",
+  "Hash": "DtsXG6fmdfBFzjtjxnUaQZxZTu6QGZ8t3iRT9cJDeKY=",
   "Source": "gamer-project-MVC",
   "BasePath": "_content/gamer-project-MVC",
   "Mode": "Default",
@@ -1309,6 +1309,23 @@
       "OriginalItemSpec": "wwwroot\\images\\backgrund_notícias.png"
     },
     {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\banner_cadastro_de_jogador 1.png",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "images/banner_cadastro_de_jogador 1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banner_cadastro_de_jogador 1.png"
+    },
+    {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\Banner_Liga-Game-Mobile.png",
       "SourceId": "gamer-project-MVC",
       "SourceType": "Discovered",
@@ -1341,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Banner_Liga-Game.png"
+    },
+    {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\banner.png",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "images/banner.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banner.png"
     },
     {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\Card-FIFA.png",
@@ -1581,6 +1615,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\640px-Brooklyn_Nets_newlogo.svg.png"
     },
     {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\7632.png",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "img/Equipes/7632.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\7632.png"
+    },
+    {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\8.jpg",
       "SourceId": "gamer-project-MVC",
       "SourceType": "Discovered",
@@ -1681,6 +1732,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\download.png"
+    },
+    {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Flamengo_braz_logo.svg.png",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "img/Equipes/Flamengo_braz_logo.svg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\Flamengo_braz_logo.svg.png"
     },
     {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\i (1).png",

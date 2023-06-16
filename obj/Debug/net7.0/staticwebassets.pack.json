@@ -321,6 +321,14 @@
       "PackagePath": "staticwebassets\\images\\backgrund_notícias.png"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\banner_cadastro_de_jogador 1.png",
+      "PackagePath": "staticwebassets\\images\\banner_cadastro_de_jogador 1.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\images\\kiljoy.png",
       "PackagePath": "staticwebassets\\images\\kiljoy.png"
     },
@@ -365,6 +373,10 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\640px-Brooklyn_Nets_newlogo.svg.png"
     },
     {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\7632.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\7632.png"
+    },
+    {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\8.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\8.jpg"
     },
@@ -375,6 +387,10 @@
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\Clube_Atlético_Mineiro_crest.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Flamengo_braz_logo.svg.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Flamengo_braz_logo.svg.png"
     },
     {
       "Id": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Miami-Heat-logo.png",
