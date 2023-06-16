@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v2ex0NsL2kItYeWGhv/z4UwyUDQ9Pjj9Si3zR5bbaJQ=",
+  "Hash": "zzTLNtzB3AET3ztHOT7DRq4TNrCDwQzwpmL0DRqJzSY=",
   "Source": "gamer-project-MVC",
   "BasePath": "_content/gamer-project-MVC",
   "Mode": "Default",
@@ -1851,6 +1851,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\renato-augusto-corinthians.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\Santos_Logo.png",
+      "SourceId": "gamer-project-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\",
+      "BasePath": "_content/gamer-project-MVC",
+      "RelativePath": "img/Equipes/Santos_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\Santos_Logo.png"
     },
     {
       "Identity": "C:\\Users\\47447272809\\Desktop\\gamer-project-MVC\\wwwroot\\img\\Equipes\\sccp.png",
