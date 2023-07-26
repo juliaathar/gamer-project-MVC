@@ -38,7 +38,7 @@ namespace gamer_project_MVC.Controllers
 
 
 
-        //todo // Método LOGAR
+         // Método LOGAR
         [Route("Logar")]
         public IActionResult Logar(IFormCollection form)
         {
@@ -83,3 +83,5 @@ namespace gamer_project_MVC.Controllers
         }
     }
 }
+
+//retirado um todo do metodo logar
